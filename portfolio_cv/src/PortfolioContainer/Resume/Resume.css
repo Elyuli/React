@@ -1,0 +1,295 @@
+.resume-container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: center;
+	min-height: -webkit-fit-content;
+	min-height: -moz-fit-content;
+	min-height: fit-content;
+	margin: 120px 0;
+}
+
+@media only screen and (max-width: 1023px) {
+	.resume-content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+}
+
+.heading-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	margin: 0 0 50px;
+}
+
+.screen-heading {
+	font-size: 32px;
+	color: #1f2235;
+	font-family: "Poppins Bold";
+}
+
+.screen-sub-heading {
+	letter-spacing: 3px;
+	margin: 8px 0 10px;
+	font-size: 12px;
+	color: var(--black);
+}
+
+.heading-separator {
+	display: flex;
+	align-items: center;
+	position: relative;
+	width: 180px;
+	margin: 10px 0 0;
+}
+
+.separator-line {
+	width: 100%;
+	height: 2px;
+	background-color: #1f221f;
+}
+
+.separator-blob {
+	height: 10px;
+	width: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+}
+
+/* Card */
+.resume-card {
+	display: flex;
+	height: 360px;
+	width: 1000px;
+}
+
+@media only screen and (max-width: 1110px) {
+	.resume-card {
+		width: 880px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.resume-card {
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		display: flex;
+		flex-direction: column;
+		margin: 30px 0;
+		align-items: center;
+		width: 90%;
+	}
+}
+
+.resume-bullets {
+	box-shadow: 15px 0 9px -15px #1f2235;
+	height: 100%;
+	width: 320px;
+}
+
+@media only screen and (max-width: 1023px) {
+	.resume-bullets {
+		margin: 30px 0;
+		width: 100%;
+	}
+}
+
+.bullet-container {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.bullet-icons {
+	width: 34px;
+	height: 100%;
+	z-index: 1;
+	background-color: #1f2235;
+	position: absolute;
+}
+
+.bullets {
+	width: 86%;
+	position: relative;
+	z-index: 2;
+}
+
+@media only screen and (max-width: 1023px) {
+	.bullets {
+		width: 90%;
+	}
+}
+
+.bullet {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	background-color: #1f2235;
+	height: 40px;
+	margin: 15px 0;
+	padding: 0 8px;
+	border-radius: 20px;
+	width: 30px;
+	transition: width 0.6s ease;
+}
+
+.bullet-logo {
+	height: 16px;
+	margin: 0 30px 0 0;
+}
+
+img {
+	vertical-align: middle;
+	border-style: none;
+}
+
+.bullet-label {
+	font-size: 14px;
+	white-space: nowrap;
+	font-family: "Poppins SemiBold";
+}
+
+.selected-bullet {
+	color: var(--white);
+	width: 100%;
+}
+
+@media only screen and (max-width: 1023px) {
+	.selected-bullet {
+		width: 100%;
+	}
+}
+
+/* Resume */
+
+.resume-bullet-details {
+	flex-grow: 1;
+	width: 600px;
+	overflow: hidden;
+	padding: 0 0 0 80px;
+}
+
+@media only screen and (max-width: 1110px) {
+	.resume-bullet-details {
+		padding: 0 0 0 70px;
+	}
+}
+
+@media only screen and (max-width: 1023px) {
+	.resume-bullet-details {
+		height: 360px;
+		padding: 0;
+		width: -webkit-fit-content;
+		width: -moz-fit-content;
+		width: fit-content;
+	}
+}
+
+.resume-details-carousel {
+	transition: -webkit-transform 1s ease-out;
+	transition: transform 1s ease-out;
+	transition: transform 1s ease-out, -webkit-transform 1s ease-out;
+}
+
+.resume-heading,
+.resume-screen-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.resume-screen-container {
+	justify-content: space-evenly;
+	height: 360px;
+	width: 100%;
+}
+
+.resume-main-heading {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+
+.resume-main-heading span {
+	color: var(--dark-orange);
+	font-size: 16px;
+	font-family: "Poppins SemiBold";
+}
+
+.heading-bullet {
+	position: absolute;
+	left: -30px;
+	height: 15px;
+	width: 15px;
+	top: 5px;
+	border-radius: 50%;
+	/* background-color: #ff5823; */
+}
+
+.heading-date {
+	background-color: #ff5823;
+	padding: 4px 12px;
+	font-size: 14px;
+	border-radius: 14px;
+	color: var(--white);
+}
+
+.resume-sub-heading {
+	font-size: 14px;
+	font-family: "Poppins SemiBold";
+	color: var(--black);
+	margin: 10px 0 0;
+}
+
+.resume-heading-description {
+	font-size: 12px;
+	text-align: justify;
+}
+
+/* Work History */
+.experience-description {
+	max-width: 100%;
+	margin: 10px 0 0;
+	text-align: justify;
+}
+
+.resume-description-text {
+	font-size: 12px;
+}
+
+/* Programming Skills */
+
+.programming-skills-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.skill-parent {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 50%;
+}
+
+.skill-percentage {
+	position: relative;
+	height: 15px;
+	width: 70%;
+	background-color: #ff5823;
+}
+
+.skill-percentage .active-percentage-bar {
+	height: 15px;
+	transition: 0.8s ease;
+	position: absolute;
+	background-color: #1f2235;
+}

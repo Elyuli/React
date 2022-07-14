@@ -1,0 +1,71 @@
+:root {
+	--light-blue: #04c3ff;
+	--light-blue-shadow: rgb(69 211 255 / 27%);
+	--sea-green: #0abead;
+	--sea-green-dark: #0cbfae;
+	--sea-green-extra-dark: #09bead;
+	--sea-green-shadow: rgba(11, 190, 173, 0.4);
+	--header-hamburger-background: rgba(11, 190, 173, 0.8);
+	--orange: #f57f17;
+	--dark-orange: #ff5823;
+	--orange-shadow: rgba(245, 127, 23, 0.2);
+	--white: #ffffff;
+	--black: #333333;
+	--disabled-btn: #09bead7a;
+	--error-message: #e44f4fd1;
+	--toast-error: #e44f4ffa;
+	--toast-shadow: #9c9c9ce3;
+	--toast-success: #0cbfae;
+	--loader-color: #0cbfae;
+	/* hdsghsf */
+	--first-color: #d90062;
+	--first-alpha-color: rgba(217, 0, 98, 0.75);
+	--second-color: #14192d;
+	--second-alpha-color: rgba(20, 25, 45, 0.75);
+	--third-color: #501464;
+	--third-alpha-color: rgba(80, 20, 100, 0.75);
+	--white-color: #fff;
+	--gray-light-color: #f3f3f3;
+	--gray-color: #ccc;
+	--gray-dark-color: #666;
+	--black-color: #000;
+	--link-color: #509ee3;
+	--title-color: #333;
+	--text-color: #222;
+	--white-alpha-color: rgba(255, 255, 255, 0.5);
+	--black-alpha-color: rgba(0, 0, 0, 0.5);
+	--font: "Poppins Regular", sans-serif;
+	--max-width: 1200px;
+	--header-height: 4rem;
+}
+
+/* ********** Reset ********** */
+html {
+	box-sizing: border-box;
+	font-family: var(--font);
+	font-size: 16px;
+	scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	/* color: var(--text-color); */
+}
+
+/* .home-container,
+.about-me-container,
+.resume-container,
+.main-container {
+	height: 100vh;
+}
+
+.testimonials {
+	height: 89vh;
+} */
