@@ -11,36 +11,15 @@ const Profile = () => {
 					<div className="colz">
 						<div className="colz-icon">
 							{" "}
-							{/* <a
-								href="https://www.facebook.com/juliocesar.fernandezcompanioni/"
+							<a href="https://github.com/Elyuli" rel="noopener norrefer">
+								<i className="fa fa-github"> </i>
+							</a>
+							<a
+								href="https://www.linkedin.com/in/julio-cesar-fernandez-companioni-961174213/"
 								rel="noopener norrefer"
 							>
-								<i className="fa fa-facebook-square"> </i>
-							</a> */}
-							{/* <a
-								href="https://www.facebook.com/juliocesar.fernandezcompanioni/"
-								rel="noopener norrefer"
-							>
-								<i className="fa fa-google-plus-square"> </i>
-							</a> */}
-							{/* <a
-								href="https://www.facebook.com/juliocesar.fernandezcompanioni/"
-								rel="noopener norrefer"
-							>
-								<i className="fa fa-instagram"> </i>
-							</a> */}
-							{/* <a
-								href="https://www.facebook.com/juliocesar.fernandezcompanioni/"
-								rel="noopener norrefer"
-							>
-								<i className="fa fa-youtube-square"> </i>
-							</a> */}
-							{/* <a
-								href="https://www.facebook.com/juliocesar.fernandezcompanioni/"
-								rel="noopener norrefer"
-							>
-								<i className="fa fa-twitter-square"> </i>
-							</a> */}
+								<i className="fa fa-linkedin"> </i>
+							</a>
 						</div>
 					</div>
 					<div className="profile-details-name">
@@ -63,7 +42,7 @@ const Profile = () => {
 										1000,
 										"Cross Plattform Dev 🌐",
 										1000,
-										"React/React Native Dev 🖥️",
+										"React Dev 🖥️",
 										1000,
 									]}
 								/>

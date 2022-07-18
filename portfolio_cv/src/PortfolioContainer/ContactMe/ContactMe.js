@@ -109,7 +109,7 @@ const ContactMe = () => {
 						<input
 							type="text"
 							name="name"
-							placeholder="Ingresa tu nombre *"
+							placeholder="Enter your name *"
 							title="Nombre sólo acepta letras y espacios en blanco"
 							pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
 							required
@@ -118,7 +118,7 @@ const ContactMe = () => {
 						<input
 							type="email"
 							name="email"
-							placeholder="Ingresa tu correo *"
+							placeholder="Enter your email *"
 							title="Email incorrecto"
 							pattern="^[a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,15})$"
 							required
@@ -129,7 +129,7 @@ const ContactMe = () => {
 							name="comments"
 							cols="50"
 							rows="5"
-							placeholder="Déjame un mensaje *"
+							placeholder="Leave me a message *"
 							required
 						></textarea>
 						<div className="send-btn">

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavHashLink } from "react-router-hash-link";
 import "./AboutMe.css";
 
 const AboutMe = () => {
@@ -24,10 +25,10 @@ const AboutMe = () => {
 					<div className="about-me-profile"></div>
 					<div className="about-me-details">
 						<span className="about-me-description">
-							Full stack web and mobile developer with background knowledge of
-							MERN stacks with redux, along with a knack of building
-							applications with utmost efficiency. Strong professional with a
-							BSC willing to be an asset for an organization.
+							Full stack web developer with prior knowledge of MERN stacks with
+							redux. I enjoy carrying out the layout and interactivity of web
+							interfaces, as well as optimization, for the good positioning and
+							loading performance of web sites and applications.
 						</span>
 						<div className="about-me-highlights">
 							<div className="highlight-heading">
@@ -60,14 +61,16 @@ const AboutMe = () => {
 						</div>
 						<div className="about-me-options">
 							{" "}
-							<button className="btn primary-btn">
-								{""} Hire Me{""}
-							</button>
+							<NavHashLink to="#ContactMe">
+								<button className="butn primary-btn">
+									{""} Hire Me{""}
+								</button>
+							</NavHashLink>
 							<a
 								href="Julio Cesar-curriculum-vitae.pdf"
 								download="Julio Cesar-curriculum-vitae.pdf"
 							>
-								<button className="btn highlighted-btn">Get Resume</button>
+								<button className="butn highlighted-btn">Get Resume</button>
 							</a>
 						</div>
 					</div>

@@ -19,18 +19,6 @@ const Resume = () => {
 	const bulletsRef = useRef();
 	const styles = { opacity: 5, transform: "translateY(1px)" };
 
-	/* 	const onClickHandler = (e) => {
-		//console.log(e.target);
-		const $bulletsArray =
-			bulletsRef.current.getElementsByClassName("selected-bullet")[0];
-		const id = e.target.getAttribute("data-id");
-		const calculo = 360 * id;
-		$bulletsArray.classList.remove("selected-bullet");
-		e.target.parentNode.classList.add("selected-bullet");
-
-		return (carouselRef.current.style.transform = `translateY(-${calculo}px)`);
-	}; */
-
 	const onClickHandler = (pos) => {
 		//console.log(pos);
 		if (resume[pos].checked) return;
@@ -103,10 +91,23 @@ const Resume = () => {
 									<div className="resume-main-heading">
 										<div className="heading-bullet"></div>
 										<span>University of Ciego de Ávila, Cuba</span>
-										<div className="heading-date">2010-2015</div>
+										<div className="heading-date">2020-PRESENT</div>
 									</div>
 									<div className="resume-sub-heading">
-										<span>BACHELOR OF SCIENCE INFORMATION TECHNOLOGY</span>
+										<span>PURSUING A MASTER'S IN APPLIED INFORMATICS</span>
+									</div>
+									<div className="resume-heading-description">
+										<span></span>
+									</div>
+								</div>
+								<div className="resume-heading">
+									<div className="resume-main-heading">
+										<div className="heading-bullet"></div>
+										<span>University of Ciego de Ávila, Cuba</span>
+										<div className="heading-date">2016-2018</div>
+									</div>
+									<div className="resume-sub-heading">
+										<span>MASTER IN TOURISM MANAGEMENT</span>
 									</div>
 									<div className="resume-heading-description">
 										<span></span>
@@ -119,20 +120,7 @@ const Resume = () => {
 										<div className="heading-date">2010-2015</div>
 									</div>
 									<div className="resume-sub-heading">
-										<span>BACHELOR OF SCIENCE INFORMATION TECHNOLOGY</span>
-									</div>
-									<div className="resume-heading-description">
-										<span></span>
-									</div>
-								</div>
-								<div className="resume-heading">
-									<div className="resume-main-heading">
-										<div className="heading-bullet"></div>
-										<span>University of Ciego de Ávila, Cuba</span>
-										<div className="heading-date">2010-2015</div>
-									</div>
-									<div className="resume-sub-heading">
-										<span>BACHELOR OF SCIENCE INFORMATION TECHNOLOGY</span>
+										<span>INFORMATICS ENGINEERING</span>
 									</div>
 									<div className="resume-heading-description">
 										<span></span>
@@ -144,25 +132,28 @@ const Resume = () => {
 									<div className="resume-heading">
 										<div className="resume-main-heading">
 											<div className="heading-bullet"></div>
-											<span>Universty of Ciego de Ávila</span>
-											<div className="heading-date">2015-Present</div>
+											<span>University of Ciego de Ávila, Cuba</span>
+											<div className="heading-date">2015-PRESENT</div>
 										</div>
 										<div className="resume-sub-heading">
-											<span>FULL STACK DEVELOPER INTERN</span>
+											<span>TEACHER AND SOFTWARE DEVELOPER</span>
 										</div>
 									</div>
 									<div className="experience-description">
 										<span className="resume-description-text">
-											Currently working as MERN stack web and mobile developer
-											and also an online instructor on udemy.
+											Since 2015 I have been working at the University of Ciego
+											de Ávila, Cuba as an acting professor. I teach classes and
+											conferences in the area of ​​computer science. I have
+											experience in the area of ​​web development.
 										</span>
 									</div>
 									<div className="experience-description">
 										{" "}
 										<span className="resume-description-text">
-											{""}- Developed an ecommerce website for client with the
-											dashboard for managing the products, managing reviews,
-											users, payment etc. .{""}
+											{""}- Design and implement an infrastructure for the
+											visualization of spatial and georeferenced information for
+											the Computer and Communications Company of the Ministry of
+											Agriculture (EICMA) of my province..{""}
 										</span>
 										<br />
 										<span className="resume-description-text">
@@ -190,7 +181,7 @@ const Resume = () => {
 									<div className="skill-percentage">
 										<div
 											className="active-percentage-bar"
-											style={{ width: "85%" }}
+											style={{ width: "75%" }}
 										></div>
 									</div>
 								</div>
@@ -200,7 +191,7 @@ const Resume = () => {
 									<div className="skill-percentage">
 										<div
 											className="active-percentage-bar"
-											style={{ width: "85%" }}
+											style={{ width: "65%" }}
 										></div>
 									</div>
 								</div>
@@ -210,7 +201,7 @@ const Resume = () => {
 									<div className="skill-percentage">
 										<div
 											className="active-percentage-bar"
-											style={{ width: "85%" }}
+											style={{ width: "65%" }}
 										></div>
 									</div>
 								</div>
@@ -220,7 +211,7 @@ const Resume = () => {
 									<div className="skill-percentage">
 										<div
 											className="active-percentage-bar"
-											style={{ width: "85%" }}
+											style={{ width: "55%" }}
 										></div>
 									</div>
 								</div>
@@ -230,7 +221,7 @@ const Resume = () => {
 									<div className="skill-percentage">
 										<div
 											className="active-percentage-bar"
-											style={{ width: "85%" }}
+											style={{ width: "75%" }}
 										></div>
 									</div>
 								</div>
@@ -240,7 +231,7 @@ const Resume = () => {
 									<div className="skill-percentage">
 										<div
 											className="active-percentage-bar"
-											style={{ width: "85%" }}
+											style={{ width: "75%" }}
 										></div>
 									</div>
 								</div>
@@ -265,40 +256,33 @@ const Resume = () => {
 								<div className="resume-heading">
 									<div className="resume-main-heading">
 										<div className="heading-bullet"></div>
-										<span>Mobile E-shop </span>
+										<span>Agrogeomet </span>
 										<div className="heading-date">2021-2022</div>
 									</div>
 									<div className="resume-sub-heading">
 										<span>
-											Technologies Used: React Native, Mongo DB, Express Js,
-											Node Js, Redux.
+											Technologies Used: React , PostgresSql, Express Js, Node,
+											API REST Geoserver.
 										</span>
 									</div>
 									<div className="resume-heading-description">
 										<span>
-											An ecommerce application designed to sell products online
-											wth payment system integration
+											Web application to display georeferenced spatial
+											information
 										</span>
 									</div>
 								</div>
 								<div className="resume-heading">
 									<div className="resume-main-heading">
 										<div className="heading-bullet"></div>
-										<span>Ecommerce Website </span>
+										<span>BurgerBuilder </span>
 										<div className="heading-date">2021-2022</div>
 									</div>
 									<div className="resume-sub-heading">
-										<span>
-											Technologies Used: Mongo DB, Epress Js, React Js, Node JS,
-											Redux, Bootstrap.
-										</span>
+										<span>Technologies Used: React Js, Redux, Bootstrap.</span>
 									</div>
 									<div className="resume-heading-description">
-										<span>
-											Online ecommerce website for showcasing and selling
-											products onlne with payment system integration, both
-											Paypal and Stripe
-										</span>
+										<span>Online e-commerce website to sell burgers</span>
 									</div>
 								</div>
 							</div>
@@ -322,17 +306,14 @@ const Resume = () => {
 								<div className="resume-heading">
 									<div className="resume-main-heading">
 										<div className="heading-bullet"></div>
-										<span>Music</span>
+										<span>Autodidact</span>
 									</div>
 									<div className="resume-sub-heading">
 										<span></span>
 									</div>
 									<div className="resume-heading-description">
 										<span>
-											Listening to soothing music is something i can never
-											compromise with, skimming through Spotify's pop songs
-											charts is at times the best stress reliever that i can get
-											my hands on.
+											I love to learn new things, apply them and teach them
 										</span>
 									</div>
 								</div>
@@ -346,9 +327,7 @@ const Resume = () => {
 									</div>
 									<div className="resume-heading-description">
 										<span>
-											I like to challenge my reflexes a lot while competing in
-											football games, pushing the rank and having interactive
-											gaming sessions excites me the most.
+											I exercise every day and lead a healthy lifestyle.
 										</span>
 									</div>
 								</div>

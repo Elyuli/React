@@ -2,7 +2,7 @@ import React from "react";
 import "./Testimonial.css";
 import Shape from "../../assets/shape-bg.png";
 import Mike from "../../assets/Testimonial/mike.png";
-import Lady from "../../assets/Testimonial/lady.png";
+import Yoelkys from "../../assets/Testimonial/yoelkys.jpg";
 import Man from "../../assets/Testimonial/man.png";
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -54,12 +54,11 @@ const Testimonial = () => {
 									<input type="radio" name="slides" id="slide-4" />
 									<ul className="slides">
 										<li className="slide">
-											<img className="avatar" src={Lady} alt="Cliente 1" />
+											<img className="avatar" src={Yoelkys} alt="Cliente 1" />
 											<blockquote>
-												"Lorem ipsum dolor sit amet consectetur, adipisicing
-												elit. Asperiores quisquam totam voluptatem atque ad nisi
-												voluptate temporibus enim fuga, error beatae iusto
-												eveniet? Labore nesciunt atque vitae est impedit eaque."
+												"When you handed in my work my head was spinning, you
+												were very nice and implemented all the features I
+												requested. Thank you."
 											</blockquote>
 											<h3 className="text-first-color">NOMBRE DEL CLIENTE</h3>
 											<h6>Puesto del Cliente</h6>
@@ -67,10 +66,9 @@ const Testimonial = () => {
 										<li className="slide">
 											<img className="avatar" src={Man} alt="Cliente 2" />
 											<blockquote>
-												"Lorem ipsum dolor sit amet consectetur, adipisicing
-												elit. Asperiores quisquam totam voluptatem atque ad nisi
-												voluptate temporibus enim fuga, error beatae iusto
-												eveniet? Labore nesciunt atque vitae est impedit eaque."
+												"This guy is incredibly awesome, I hired him and when He
+												delivered, I honestly fell in love with the project. He
+												is indeed a great guy,"
 											</blockquote>
 											<h3 className="text-first-color">NOMBRE DEL CLIENTE</h3>
 											<h6>Puesto del Cliente</h6>
@@ -78,21 +76,19 @@ const Testimonial = () => {
 										<li className="slide">
 											<img className="avatar" src={Mike} alt="Cliente 1" />
 											<blockquote>
-												"Lorem ipsum dolor sit amet consectetur, adipisicing
-												elit. Asperiores quisquam totam voluptatem atque ad nisi
-												voluptate temporibus enim fuga, error beatae iusto
-												eveniet? Labore nesciunt atque vitae est impedit eaque."
+												"I patronized Julio and when He delivered, I honestly
+												fell in love with the project He is a very honest guy
+												and he delivers ontime."
 											</blockquote>
 											<h3 className="text-first-color">NOMBRE DEL CLIENTE</h3>
 											<h6>Puesto del Cliente</h6>
 										</li>
 										<li className="slide">
-											<img className="avatar" src={Lady} alt="Cliente 2" />
+											<img className="avatar" src={Yoelkys} alt="Cliente 2" />
 											<blockquote>
-												"Lorem ipsum dolor sit amet consectetur, adipisicing
-												elit. Asperiores quisquam totam voluptatem atque ad nisi
-												voluptate temporibus enim fuga, error beatae iusto
-												eveniet? Labore nesciunt atque vitae est impedit eaque."
+												"It was nice hiring this guy for my e-commerce
+												project.He delivered even more than i can imagine. I
+												recommend him for you."
 											</blockquote>
 											<h3 className="text-first-color">NOMBRE DEL CLIENTE</h3>
 											<h6>Puesto del Cliente</h6>
