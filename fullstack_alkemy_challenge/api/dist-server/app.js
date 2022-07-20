@@ -15,10 +15,12 @@ var _cookieParser = _interopRequireDefault(require("cookie-parser"));
 
 var _morgan = _interopRequireDefault(require("morgan"));
 
+var _db = _interopRequireDefault(require("./config/db"));
+
+var _index = _interopRequireDefault(require("./router/index"));
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
-//const indexRouter = require("./routes/index");
-//const usersRouter = require("./routes/users");
 var app = (0, _express["default"])(),
     port = _env["default"].PORT; //Middlewares
 
@@ -28,10 +30,9 @@ app.use(_express["default"].urlencoded({
   extended: false
 }));
 app.use((0, _cookieParser["default"])());
-app.use(_express["default"]["static"](_path["default"].join(__dirname, "public"))); //Routes
-//app.use("/", indexRouter);
-//app.use("/users", usersRouter);
+app.use(_express["default"]["static"](_path["default"].join(__dirname, "../public"))); //Routes
 
+(0, _index["default"])(app);
 app.listen(port, function () {
   console.log("Express listening on port:", port);
 });

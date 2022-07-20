@@ -5,9 +5,9 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports["default"] = void 0;
 
-var login = function login(app, db) {
-  console.log("login");
+var operations = function operations(app, db) {
+  console.log("operaciones");
 };
 
-var _default = login;
+var _default = operations;
 exports["default"] = _default;
