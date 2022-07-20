@@ -3,9 +3,8 @@ import path from "path";
 import env from "./config/env";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
-
-//const indexRouter = require("./routes/index");
-//const usersRouter = require("./routes/users");
+import db from "./config/db";
+import router from "./router/index";
 
 const app = express(),
 	port = env.PORT;
@@ -15,11 +14,10 @@ app.use(logger("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static(path.join(__dirname, "../public")));
 
 //Routes
-//app.use("/", indexRouter);
-//app.use("/users", usersRouter);
+router(app);
 
 app.listen(port, () => {
 	console.log("Express listening on port:", port);
