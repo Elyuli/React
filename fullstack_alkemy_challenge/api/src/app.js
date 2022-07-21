@@ -4,7 +4,7 @@ import env from "./config/env";
 import cookieParser from "cookie-parser";
 import logger from "morgan";
 import db from "./config/db";
-import router from "./router/index";
+import router from "./v1/router/index";
 
 const app = express(),
 	port = env.PORT;

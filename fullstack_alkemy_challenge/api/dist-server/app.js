@@ -17,7 +17,7 @@ var _morgan = _interopRequireDefault(require("morgan"));
 
 var _db = _interopRequireDefault(require("./config/db"));
 
-var _index = _interopRequireDefault(require("./router/index"));
+var _index = _interopRequireDefault(require("./v1/router/index"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
