@@ -17,7 +17,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "../public")));
 
 //Routes
-router(app);
+router(app, db);
 
 app.listen(port, () => {
 	console.log("Express listening on port:", port);

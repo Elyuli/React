@@ -32,7 +32,7 @@ app.use(_express["default"].urlencoded({
 app.use((0, _cookieParser["default"])());
 app.use(_express["default"]["static"](_path["default"].join(__dirname, "../public"))); //Routes
 
-(0, _index["default"])(app);
+(0, _index["default"])(app, _db["default"]);
 app.listen(port, function () {
   console.log("Express listening on port:", port);
 });
